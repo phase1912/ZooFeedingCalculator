@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-ZooFeedingCalculator-89fc358f-d9b2-4608-80ea-b1a97b989029</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CsvHelper" Version="33.1.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="**/._*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="data\**\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+</Project>

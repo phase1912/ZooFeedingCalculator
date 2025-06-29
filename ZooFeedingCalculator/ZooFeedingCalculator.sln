@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooFeedingCalculator", "ZooFeedingCalculator\ZooFeedingCalculator.csproj", "{1A794562-0CE8-4EE7-8750-F45D165B4986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooFeedingCalculator.Tests", "ZooFeedingCalculator.Tests\ZooFeedingCalculator.Tests.csproj", "{9329E278-95D4-4922-BBBB-1D55EC3E9D29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A794562-0CE8-4EE7-8750-F45D165B4986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A794562-0CE8-4EE7-8750-F45D165B4986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A794562-0CE8-4EE7-8750-F45D165B4986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A794562-0CE8-4EE7-8750-F45D165B4986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9329E278-95D4-4922-BBBB-1D55EC3E9D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9329E278-95D4-4922-BBBB-1D55EC3E9D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9329E278-95D4-4922-BBBB-1D55EC3E9D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9329E278-95D4-4922-BBBB-1D55EC3E9D29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
