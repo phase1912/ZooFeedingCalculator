@@ -19,8 +19,8 @@ public class FileLoaderTests
 
         var prices = _loader.LoadPrices(tempFile);
 
-        Assert.Equal(21.5, prices.MeatPricePerKg);
-        Assert.Equal(13.75, prices.FruitPricePerKg);
+        Assert.Equal(21.5m, prices.MeatPricePerKg);
+        Assert.Equal(13.75m, prices.FruitPricePerKg);
     }
 
     [Fact]
@@ -70,8 +70,8 @@ public class FileLoaderTests
 
         var prices = _loader.LoadPrices(tempFile);
 
-        Assert.Equal(21.5, prices.MeatPricePerKg);
-        Assert.Equal(10.3, prices.FruitPricePerKg);
+        Assert.Equal(21.5m, prices.MeatPricePerKg);
+        Assert.Equal(10.3m, prices.FruitPricePerKg);
     }
 
     #endregion

@@ -14,13 +14,13 @@ internal class FileLoader : IFileLoader
     {
         try
         {
-            double meatPrice = 0, fruitPrice = 0;
+            decimal meatPrice = 0, fruitPrice = 0;
             foreach (var line in File.ReadAllLines(filePath))
             {
                 if (line.StartsWith("Meat"))
-                    meatPrice = double.Parse(line.Split('=')[1], CultureInfo.InvariantCulture);
+                    meatPrice = decimal.Parse(line.Split('=')[1], CultureInfo.InvariantCulture);
                 else if (line.StartsWith("Fruit"))
-                    fruitPrice = double.Parse(line.Split('=')[1], CultureInfo.InvariantCulture);
+                    fruitPrice = decimal.Parse(line.Split('=')[1], CultureInfo.InvariantCulture);
             }
 
             return new FoodPrices(meatPrice, fruitPrice);
@@ -70,7 +70,7 @@ internal class FileLoader : IFileLoader
                             specie,
                             speciesInfo.TypeOfFood,
                             weight,
-                            speciesInfo.Rate ?? 0,
+                            speciesInfo.Rate,
                             speciesInfo.MeatPercentageParsed
                         ));
                     }

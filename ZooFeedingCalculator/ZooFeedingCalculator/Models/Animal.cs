@@ -19,13 +19,13 @@ internal class Animal(string name, string specie, string typeOfFood, double weig
         double totalFoodKg = Weight * Rate;
         return TypeOfFood switch
         {
-            "meat" => (totalFoodKg, 0),
-            "fruit" => (0, totalFoodKg),
+            "meat" => (totalFoodKg, 0.0),
+            "fruit" => (0.0, totalFoodKg),
             "both" => (
-                totalFoodKg * (MeatPercentage ?? 0) / 100,
-                totalFoodKg * (1 - (MeatPercentage ?? 0) / 100)
+                totalFoodKg * (MeatPercentage ?? 0.0) / 100.0,
+                totalFoodKg * (1.0 - (MeatPercentage ?? 0.0) / 100.0)
             ),
-            _ => (0, 0)
+            _ => (0.0, 0.0)
         };
     }
 }

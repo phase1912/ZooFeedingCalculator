@@ -8,7 +8,7 @@ internal sealed class AnimalCsvModel
 
     public string TypeOfFood { get; set; }
 
-    public double? Rate { get; set; }
+    public double Rate { get; set; }
 
     public string MeatPercentage { get; set; }
 

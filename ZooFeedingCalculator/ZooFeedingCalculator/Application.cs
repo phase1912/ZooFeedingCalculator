@@ -15,7 +15,7 @@ internal sealed class Application(
     {
         var prices = fileLoader.LoadPrices(_paths.PricesPath);
         var animals = fileLoader.LoadAnimals(_paths.AnimalsCsvPath, _paths.ZooXmlPath);
-        double totalCost = calculator.CalculateTotalDailyCost(animals, prices);
+        decimal totalCost = calculator.CalculateTotalDailyCost(animals, prices);
 
         Console.WriteLine($"Total daily feeding cost: {totalCost:F2} zł");
     }

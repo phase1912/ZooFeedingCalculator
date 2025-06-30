@@ -1,7 +1,7 @@
 namespace ZooFeedingCalculator.Models;
 
-internal class FoodPrices(double meatPrice, double fruitPrice)
+internal class FoodPrices(decimal meatPrice, decimal fruitPrice)
 {
-    public double MeatPricePerKg { get; } = meatPrice;
-    public double FruitPricePerKg { get; } = fruitPrice;
+    public decimal MeatPricePerKg { get; } = meatPrice;
+    public decimal FruitPricePerKg { get; } = fruitPrice;
 }

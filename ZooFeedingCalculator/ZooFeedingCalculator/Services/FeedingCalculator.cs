@@ -4,13 +4,13 @@ namespace ZooFeedingCalculator.Services;
 
 internal class FeedingCalculator : IFeedingCalculator
 {
-    public double CalculateTotalDailyCost(IReadOnlyCollection<Animal> animals, FoodPrices prices)
+    public decimal CalculateTotalDailyCost(IReadOnlyCollection<Animal> animals, FoodPrices prices)
     {
-        double total = 0;
+        decimal total = 0.0m;
         foreach (var animal in animals)
         {
             var (meatKg, fruitKg) = animal.GetDailyFood();
-            total += meatKg * prices.MeatPricePerKg + fruitKg * prices.FruitPricePerKg;
+            total += (decimal)meatKg * prices.MeatPricePerKg + (decimal)fruitKg * prices.FruitPricePerKg;
         }
         return total;
     }

@@ -4,5 +4,5 @@ namespace ZooFeedingCalculator.Services;
 
 internal interface IFeedingCalculator
 {
-    double CalculateTotalDailyCost(IReadOnlyCollection<Animal> animals, FoodPrices prices);
+    decimal CalculateTotalDailyCost(IReadOnlyCollection<Animal> animals, FoodPrices prices);
 }
